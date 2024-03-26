@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/pgago/.nuget/packages/": {}
+    "C:\\Users\\Mateusz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyAppConsumer/LegacyAppConsumer.csproj",
+      "projectUniqueName": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\2\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
       "projectName": "LegacyAppConsumer",
-      "projectPath": "/Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyAppConsumer/LegacyAppConsumer.csproj",
-      "packagesPath": "/Users/pgago/.nuget/packages/",
-      "outputPath": "/Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyAppConsumer/obj/",
+      "projectPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\2\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+      "packagesPath": "C:\\Users\\Mateusz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\2\\zadanie\\LegacyAppConsumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pgago/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Mateusz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -51,8 +51,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/LegacyApp.csproj": {
-              "projectPath": "/Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/LegacyApp.csproj"
+            "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\2\\zadanie\\LegacyApp\\LegacyApp.csproj": {
+              "projectPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\2\\zadanie\\LegacyApp\\LegacyApp.csproj"
             }
           }
         }
@@ -82,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Mateusz\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
