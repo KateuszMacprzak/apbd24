@@ -2,7 +2,7 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005CMateusz_005CDesktop_005Cstudia_005C6sem_005Capbd_005C2_005Czadanie_005CLegacyApp_005CUser_002Ecs/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=119e39b2_002D530c_002D4474_002Db648_002D6cd041845efa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestUserVeryImportantClientHasNoCreditLimit" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::28D22E1C-C91E-4A2B-AC68-90C972FBEC2B::net8.0::LegacyAppTests.Tests.TestUserVeryImportantClientHasNoCreditLimit&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::28D22E1C-C91E-4A2B-AC68-90C972FBEC2B::net8.0::LegacyAppTests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4bd79730_002D07a6_002D45f5_002Db54e_002D032d9c101970/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
