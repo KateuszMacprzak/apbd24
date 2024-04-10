@@ -1,4 +1,6 @@
 using LegacyApp;
+using Microsoft.VisualBasic;
+
 namespace LegacyAppTests;
 
 public class Tests

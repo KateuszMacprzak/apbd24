@@ -6,21 +6,6 @@ namespace LegacyApp
     {
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
-            int age = DateTime.Now.Year - dateOfBirth.Year;
-            if (DateTime.Now.Month < dateOfBirth.Month ||
-                (DateTime.Now.Month == dateOfBirth.Month && DateTime.Now.Day < dateOfBirth.Day))
-            {
-                age--;
-            }
-
-            ;
-
-            if ((string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName)) || (!email.Contains("@") && !email.Contains(".")) || (age<21))
-            {
-                return false;
-            }
-            
-
             var clientRepository = new ClientRepository();
             var client = clientRepository.GetById(clientId);
 
@@ -32,18 +17,27 @@ namespace LegacyApp
                 FirstName = firstName,
                 LastName = lastName
             };
-
-            if (client.Type == "VeryImportantClient")
+            int age = DateTime.Now.Year - dateOfBirth.Year;
+            if (DateTime.Now.Month < dateOfBirth.Month ||
+                (DateTime.Now.Month == dateOfBirth.Month && DateTime.Now.Day < dateOfBirth.Day))
             {
-                user.HasCreditLimit = false;
+                age--;
             }
-            else if (client.Type == "ImportantClient")
+
+            ;
+
+            if ((string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName)) || (!email.Contains("@") && !email.Contains(".")) || (age<21) || client.Type == "VeryImportantClient")
+            {
+                return false;
+            }
+            
+
+            if (client.Type == "ImportantClient")
             {
                 using (var userCreditService = new UserCreditService())
                 {
                     int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    creditLimit = creditLimit * 2;
-                    user.CreditLimit = creditLimit;
+                    user.CreditLimit = creditLimit * 2;
                 }
             }
             else
