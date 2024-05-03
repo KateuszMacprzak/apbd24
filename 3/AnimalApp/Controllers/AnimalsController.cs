@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using AnimalApp.Models;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.HttpLogging;
 namespace AnimalApp.Controllers;
 
 public class AnimalsController : ControllerBase
@@ -77,8 +77,42 @@ public class AnimalsController : ControllerBase
                 return NotFound($"Parameter does not exist : {orderBy}");
         }
     }
-    public AnimalsController(IAnimalsService animalsService)
+
+    [HttpPost]
+    public IActionResult CreateAnimal(Animal animal)
     {
-        _animalsService = animalsService;
+        _animals.Add(animal);
+        return StatusCode(StatusCodes.Status201Created);
+    }
+
+    [HttpPut("{id:int")]
+    public IActionResult UpdateAnimal(int id, Animal animal)
+    {
+        var animalToEdit= _animals.FirstOrDefault(a => a.IdAnimal == id);
+
+        if (animalToEdit == null)
+        {
+            return NotFound($"Animal with id {id} was not found");
+        }
+
+        if (animalToEdit.IdAnimal != animal.IdAnimal)
+        {
+            return BadRequest("Id cannot be changed");
+        };
+        _animals.Remove(animalToEdit);
+        _animals.Add(animal);
+        return NoContent();            
+    }
+    [HttpDelete("{id:int}")]
+    public IActionResult DeleteAnimal(int id, Animal animal)
+    {
+        var animalToDelete= _animals.FirstOrDefault(a => a.IdAnimal == id);
+        if (animalToDelete == null)
+        {
+            return NoContent();
+        }
+
+        _animals.Remove(animalToDelete);
+        return NoContent();
     }
 }
