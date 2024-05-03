@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AnimalApp.Controllers;
 
@@ -59,6 +60,23 @@ public class AnimalsController : ControllerBase
         return Ok(_animals.OrderBy(animal => animal.Name).ToList());
     }
 
+    [HttpGet("{orderBy}")]
+    public IActionResult GetAnimals(string orderBy)
+    {
+        switch (orderBy)
+        {
+            case "Name":
+                return Ok(_animals.OrderBy(animal => animal.Name).ToList()); 
+            case "Description":
+                return Ok(_animals.OrderBy(animal => animal.Description).ToList());
+            case "Category":
+                return Ok(_animals.OrderBy(animal => animal.Description).ToList());
+            case "Area":
+                return Ok(_animals.OrderBy(animal => animal.Area).ToList());
+            default:
+                return NotFound($"Parameter does not exist : {orderBy}");
+        }
+    }
     public AnimalsController(IAnimalsService animalsService)
     {
         _animalsService = animalsService;
