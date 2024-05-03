@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.HttpLogging;
 namespace AnimalApp.Controllers;
 
+
+[Route("api/animals")]
+[ApiController]
 public class AnimalsController : ControllerBase
 {
     private static readonly List<Animal> _animals = new()
@@ -85,7 +88,7 @@ public class AnimalsController : ControllerBase
         return StatusCode(StatusCodes.Status201Created);
     }
 
-    [HttpPut("{id:int")]
+    [HttpPut("{id:int}")]
     public IActionResult UpdateAnimal(int id, Animal animal)
     {
         var animalToEdit= _animals.FirstOrDefault(a => a.IdAnimal == id);
