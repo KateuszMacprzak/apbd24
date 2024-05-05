@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimalApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cafc1e9f877d90f437244e62e3b7c65cfd29e88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2a4512e6c02d055ed034449e19392d1f065dbe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimalApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimalApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

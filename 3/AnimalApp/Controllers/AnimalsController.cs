@@ -75,9 +75,8 @@ public class AnimalsController : ControllerBase
                 return Ok(_animals.OrderBy(animal => animal.Description).ToList());
             case "Area":
                 return Ok(_animals.OrderBy(animal => animal.Area).ToList());
-            // domyslne sortowanie powinno sie odbywac po kolumnie name
             default:
-                return Ok(_animals.OrderBy(animal => animal.Name).ToList()); 
+                return NotFound($"Parameter does not exist : {orderBy}");
         }
     }
 
