@@ -1,9 +1,8 @@
 ﻿using AnimalApp.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.HttpLogging;
 namespace AnimalApp.Controllers;
 
-
+// kontroler animals
 [Route("api/animals")]
 [ApiController]
 public class AnimalsController : ControllerBase
@@ -56,13 +55,13 @@ public class AnimalsController : ControllerBase
             Area = "Ocean"
         }
     };
-
+    //endpoint pozwalajacy na uzyskanie listy zwierzat
     [HttpGet]
     public IActionResult GetAnimals()
     {
         return Ok(_animals.OrderBy(animal => animal.Name).ToList());
     }
-
+    //endpoint pozwalajacy na uzyskanie listy zwierzat z sortowaniem
     [HttpGet("{orderBy}")]
     public IActionResult GetAnimals(string orderBy)
     {
@@ -76,8 +75,9 @@ public class AnimalsController : ControllerBase
                 return Ok(_animals.OrderBy(animal => animal.Description).ToList());
             case "Area":
                 return Ok(_animals.OrderBy(animal => animal.Area).ToList());
+            // domyslne sortowanie powinno sie odbywac po kolumnie name
             default:
-                return NotFound($"Parameter does not exist : {orderBy}");
+                return Ok(_animals.OrderBy(animal => animal.Name).ToList()); 
         }
     }
 
