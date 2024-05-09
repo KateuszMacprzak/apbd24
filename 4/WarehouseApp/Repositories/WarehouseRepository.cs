@@ -1,69 +1,73 @@
 ﻿using System.Data.SqlClient;
 using AnimalApp.Models;
 
-namespace AnimalApp.Repositories;
+namespace WarehouseApp.Repositories;
 
 public class AnimalsRepository : IAnimalsRepository
 {
     private IConfiguration _configuration;
 
-    public AnimalsRepository(IConfiguration configuration)
+    public WarehouseRepository(IConfiguration configuration)
     {
         _configuration = configuration;
     }
 
-    public IEnumerable<Animal> GetAnimals()
+    public IEnumerable<Product> GetProduct(int idProduct)
     {
         using var con = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         con.Open();
         
         using var cmd = new SqlCommand();
         cmd.Connection = con;
-        cmd.CommandText = "SELECT IdAnimal, Name, Description, Category, Area FROM Animal ORDER BY Name";
+        cmd.CommandText = "SELECT IdProduct, Name, Description, Price FROM Product WHERE IdProduct = @IdProduct";
+        cmd.Parameters.AddWithValue("@IdProduct", idProduct);
         
         var dr = cmd.ExecuteReader();
-        var animals = new List<Animal>();
+        if (!dr) = cmd.ExecuteReader();
+        var products = new List<Product>();
         while (dr.Read())
         {
-            var grade = new Animal()
+            var grade = new Product()
             {
-                IdAnimal = (int)dr["IdAnimal"],
+                IdProduct = (int)dr["IdProduct"],
                 Name = dr["Name"].ToString(),
                 Description = dr["Description"].ToString(),
-                Category = dr["Category"].ToString(),
+                Category = dr["Price"].ToString(),
                 Area = dr["Area"].ToString(),
                 
             };
-            animals.Add(grade);
+            products.Add(grade);
         }
         
-        return animals;
+        return products;
     }
     
-    public Animal GetAnimal(int idAnimal)
+    public Animal GetWarehouse(int idWarehouse)
     {
         using var con = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         con.Open(); 
         
         using var cmd = new SqlCommand();
         cmd.Connection = con;
-        cmd.CommandText = "SELECT IdAnimal, Name, Description, Category, Area, IndexNumber FROM Animal WHERE IdStudent = @IdAnimal";
-        cmd.Parameters.AddWithValue("@IdAnimal", idAnimal);
+        cmd.CommandText = "SELECT IdWarehouse, Name, Address FROM Warehouse WHERE IdWarehouse = @IdWarehouse";
+        cmd.Parameters.AddWithValue("@IdWarehouse", idWarehouse);
         
         var dr = cmd.ExecuteReader();
-        
         if (!dr.Read()) return null;
-        
-        var student = new Animal()
+
+        var warehouses = new List<Warehouse>();
+        while (dr.Read())
         {
-            IdAnimal = (int)dr["IdAnimal"],
-            Name = dr["Name"].ToString(),
-            Description = dr["Description"].ToString(),
-            Category = dr["Category"].ToString(),
-            Area = dr["Area"].ToString(),
-        };
+            var grade = new Warehouse()
+            {
+                IdWarehouse = (int)dr["IdWarehouse"],
+                Name = dr["Name"].ToString(),
+                Address = dr["Address"].ToString(),
+            };
+            warehouses.Add(grade);
+        }
         
-        return student;
+        return warehouses;
     }
     
     public int CreateAnimal(Animal animal)
