@@ -5,7 +5,7 @@ namespace AnimalApp.Controllers;
 // kontroler animals
 [Route("api/animals")]
 [ApiController]
-public class AnimalsController : ControllerBase
+public class Warehouse : ControllerBase
 {
     private static readonly List<Animal> _animals = new()
     {
