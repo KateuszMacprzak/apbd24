@@ -924,11 +924,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\AnimalApp\\AnimalApp.csproj",
+      "projectUniqueName": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\WarehouseApp\\AnimalApp.csproj",
       "projectName": "AnimalApp",
-      "projectPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\AnimalApp\\AnimalApp.csproj",
+      "projectPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\WarehouseApp\\AnimalApp.csproj",
       "packagesPath": "C:\\Users\\Mateusz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\AnimalApp\\obj\\",
+      "outputPath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\WarehouseApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mateusz\\AppData\\Roaming\\NuGet\\NuGet.Config"

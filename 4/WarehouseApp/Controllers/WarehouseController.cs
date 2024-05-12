@@ -7,73 +7,53 @@ namespace WarehouseApp.Controllers;
 [ApiController]
 public class AnimalsController: ControllerBase
 {
-    private static readonly List<Animal> _animals = new()
+    private static readonly List<Warehouse> _warehouses = new()
     {
-        new Animal {IdAnimal = 1, Name = "Wolf", Description = "Pack - oriented", Category = "Carnivore", Area = "European Forest" },
-        new Animal {IdAnimal = 2, Name = "Scorpion", Description = "Snippo", Category = "Carnivore", Area = "Dessert Sands" },
-        new Animal {IdAnimal = 3, Name = "Red Panda", Description = "Cute and Fluffy", Category = "Omnivore", Area = "Asian Forest" },
-        new Animal {IdAnimal = 4, Name = "Moth", Description = "Lamp Lover", Category = "Herbivore", Area = "Woods" }
+        new Warehouse {IdWarehouse = 1, Name = "Warsaw", Address = "Kwiatowa 12"}
     };
     [HttpGet]
-    public IActionResult GetAnimals()
+    public IActionResult GetWarehouses()
     {
-        return Ok(_animals.OrderBy(animal => ani mal.Name).ToList()); 
+        return Ok(_warehouses.OrderBy(warehouse => warehouse.IdWarehouse).ToList()); 
     }
     
-    [HttpGet("{orderBy}")]
-    public IActionResult GetAnimals(string orderBy)
-    {
-        switch (orderBy)
-        {
-            case "Name":
-                return Ok(_animals.OrderBy(animal => animal.Name).ToList());  
-            case "Description":
-                return Ok(_animals.OrderBy(animal => animal.Description).ToList());  
-            case "Category":
-                return Ok(_animals.OrderBy(animal => animal.Category).ToList()); 
-            case "Area":
-                return Ok(_animals.OrderBy(animal => animal.Area).ToList());   
-            default:
-                return NotFound($"Cannot resolve {orderBy} as sorting parameter");
-        }
-    }
 
     [HttpPost]
-    public IActionResult CreateAnimal(Animal animal)
+    public IActionResult CreateWarehouse(Warehouse warehouse)
     {
-        _animals.Add(animal);
+        _warehouses.Add(warehouse);
         return StatusCode(StatusCodes.Status201Created);
     }
 
     [HttpPut("{id:int}")]
-    public IActionResult UpdateAnimal(int id, Animal animal)
+    public IActionResult UpdateWarehouse(int id, Warehouse warehouse)
     {
-        var animalToEdit= _animals.FirstOrDefault(a => a.IdAnimal == id);
+        var warehouseToEdit= _warehouses.FirstOrDefault(a => a.IdWarehouse == id);
 
-        if (animalToEdit == null)
+        if (warehouseToEdit == null)
         {
             return NotFound($"Animal with id {id} was not found");
         }
 
-        if (animalToEdit.IdAnimal != animal.IdAnimal)
+        if (warehouseToEdit.IdWarehouse != warehouse.IdWarehouse)
         {
             return BadRequest("Id cannot be changed");
         };
-        _animals.Remove(animalToEdit);
-        _animals.Add(animal);
+        _warehouses.Remove(warehouseToEdit);
+        _warehouses.Add(warehouse);
         return NoContent();    
     }
     
     [HttpDelete("{id:int}")]
-    public IActionResult DeleteAnimal(int id, Animal animal)
+    public IActionResult DeleteWarehouse(int id, Warehouse warehouse)
     {
-        var animalToDelete= _animals.FirstOrDefault(a => a.IdAnimal == id);
-        if (animalToDelete == null)
+        var warehouseToDelete= _warehouses.FirstOrDefault(a => a.IdWarehouse == id);
+        if (warehouseToDelete == null)
         {
             return NoContent();
         }
 
-        _animals.Remove(animalToDelete);
+        _warehouses.Remove(warehouseToDelete);
         return NoContent();
     }
 }

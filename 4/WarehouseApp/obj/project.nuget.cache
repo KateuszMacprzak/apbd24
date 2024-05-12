@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hKCX4Xo9KYsvl2a496RjusRk5WLXYQ4exPd/F8adysV6wD2vNfkt2pgYBVteNzaA53MHt92c4LuXC0WCVTBy8Q==",
+  "dgSpecHash": "D1sHqjflwxKUKFMoE02AzikJUHVmq0Hy8rt6+3wbZT+yLilsECh5QhsG7p2djW4UXzKOI1RzAQ3SsB2VtJRW8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\AnimalApp\\AnimalApp.csproj",
+  "projectFilePath": "C:\\Users\\Mateusz\\Desktop\\studia\\6sem\\apbd\\4\\WarehouseApp\\AnimalApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
