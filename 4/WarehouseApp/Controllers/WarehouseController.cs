@@ -116,3 +116,62 @@ public class ProductController: ControllerBase
         return NoContent();
     }
 }
+
+public class OrderController
+
+// kontroler zamowien
+[Route("api/orders")]
+[ApiController]
+
+public class OrderController: ControllerBase
+{
+    private static readonly List<Order> _orders = new()
+        {
+            new Order {IdOrder=1, IdProduct=1, Amount=125, CreatedAt="12-05-2024", FullfilledAt="12-05-2024"},
+        }
+        [HttpGet]
+    public IActionResult GetOrders()
+    {
+        return Ok(_orders.OrderBy(order => order.IdOrder).ToList());
+    }
+
+    [HttpPost]
+    public IActionResult CreateOrder(Order order)
+    {
+        _orders.Add(order);
+        return StatusCode(StatusCodes.Status201Created);
+    }
+
+    [HttpPut("{id:int}")]
+    public IActionResult UpdateOrder(int id, Order order)
+    {
+        var orderToEdit = _orders.FirstOrDefault(a => a.IdOrder == id)
+
+        if (orderToEdit == null)
+        {
+            return NotFound($"Order with id {id} was not found");
+        }
+
+        if (orderToEdit.IdProduct != order.IdProduct)
+        {
+            return BadRequest("Id cannot be changed");
+        }
+
+        _orders.Remove(orderToEdit);
+        _orders.Add(order);
+        return NoContent();
+    }
+
+    [HttpDelete("{id:int")]
+    public IActionResult DeleteOrder(int id, Order order)
+    {
+        var orderToDelete = _orders.FirstOrDefault(a => a.IdProduct == id);
+        if (orderToDelete == null)
+        {
+            return NoContent();
+        }
+
+        _orders.Remove(orderToDelete);
+        return NoContent();
+    }
+}
