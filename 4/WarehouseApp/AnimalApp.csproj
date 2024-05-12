@@ -15,25 +15,22 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="Controllers\**" />
       <Compile Remove="Models\**" />
       <Compile Remove="Repositories\**" />
+      <Compile Include="Controllers\ProductController.cs" />
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="Controllers\**" />
       <EmbeddedResource Remove="Models\**" />
       <EmbeddedResource Remove="Repositories\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Remove="Controllers\**" />
       <Content Remove="Models\**" />
       <Content Remove="Repositories\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Controllers\**" />
       <None Remove="Models\**" />
       <None Remove="Repositories\**" />
     </ItemGroup>
