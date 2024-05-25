@@ -3,7 +3,7 @@ using AnimalApp.Models;
 
 namespace WarehouseApp.Repositories;
 
-public class AnimalsRepository : IAnimalsRepository
+public class WarehousesRepository : IWarehousesRepository
 {
     private IConfiguration _configuration;
 
@@ -70,53 +70,49 @@ public class AnimalsRepository : IAnimalsRepository
         return warehouses;
     }
     
-    public int CreateAnimal(Animal animal)
+    public int CreateWarehouse(Animal animal)
     {
         using var con = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         con.Open();
         
         using var cmd = new SqlCommand();
         cmd.Connection = con;
-        cmd.CommandText = "INSERT INTO Animal(Name,Description,Category,Area) VALUES(@Name,@Description,@Category,@Area)";
-        cmd.Parameters.AddWithValue("@IdAnimal", animal.IdAnimal);
-        cmd.Parameters.AddWithValue("@Name", animal.Name);
-        cmd.Parameters.AddWithValue(",@Description", animal.Description);
-        cmd.Parameters.AddWithValue("@Category", animal.Category);
-        cmd.Parameters.AddWithValue("@Area", animal.Area);
-        
+        cmd.CommandText = "INSERT INTO Warehouse(IdWarehouse,Name,Address) VALUES(@IdWarehouse,@Name,@Address)";
+        cmd.Parameters.AddWithValue("@IdWarehouse", warehouse.IdWarehouse);
+        cmd.Parameters.AddWithValue("@Name", warehouse.Name);
+        cmd.Parameters.AddWithValue("@Address", warehouse.Address);
+
         var affectedCount = cmd.ExecuteNonQuery();
         return affectedCount;
     }
 
     
-    public int DeleteAnimal(int id)
+    public int DeleteWarehouse(int id)
     {
         using var con = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         con.Open();
         
         using var cmd = new SqlCommand();
         cmd.Connection = con;
-        cmd.CommandText = "DELETE FROM Animal WHERE IdAnimal = @IdAnimal";
-        cmd.Parameters.AddWithValue("@IdAnimal", id);
+        cmd.CommandText = "DELETE FROM Warehouse WHERE IdWarehouse = @IdWarehouse";
+        cmd.Parameters.AddWithValue("@IdWarehouse", id);
         
         var affectedCount = cmd.ExecuteNonQuery();
         return affectedCount;
     }
 
-    public int UpdateAnimal(Animal animal)
+    public int UpdateWarehouse(Warehouse warehouse)
     {
         using var con = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         con.Open();
         
         using var cmd = new SqlCommand();
         cmd.Connection = con;
-        cmd.CommandText = "UPDATE Animal SET Name=Name, Description=@Description, Category=@Category Area=@Area WHERE IdAnimal = @IdAnimal";
-        cmd.Parameters.AddWithValue("@IdAnimal", animal.IdAnimal);
-        cmd.Parameters.AddWithValue("@Name", animal.Name);
-        cmd.Parameters.AddWithValue(",@Description", animal.Description);
-        cmd.Parameters.AddWithValue("@Category", animal.Category);
-        cmd.Parameters.AddWithValue("@Area", animal.Area);
-        
+        cmd.CommandText = "UPDATE Warehouse SET Name=Name, Address=@Address WHERE IdWarehouse = @IdWarehouse";
+        cmd.Parameters.AddWithValue("@IdWarehouse", warehouse.IdWarehouse);
+        cmd.Parameters.AddWithValue("@Name", warehouse.Name);
+        cmd.Parameters.AddWithValue(",@Address", warehouse.Address);
+
         var affectedCount = cmd.ExecuteNonQuery();
         return affectedCount;
     }

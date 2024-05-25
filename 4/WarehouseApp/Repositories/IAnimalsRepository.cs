@@ -1,5 +1,5 @@
-﻿using AnimalApp.Models;
-namespace AnimalApp.Repositories;
+﻿using WarehouseApp.Models;
+namespace WarehouseApp.Repositories;
 
 public interface IAnimalsRepository
 {

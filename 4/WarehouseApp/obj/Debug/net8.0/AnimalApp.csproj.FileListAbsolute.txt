@@ -38,3 +38,14 @@ C:\Users\Mateusz\Desktop\studia\6sem\apbd\3\AnimalApp\obj\Debug\net8.0\refint\An
 C:\Users\Mateusz\Desktop\studia\6sem\apbd\3\AnimalApp\obj\Debug\net8.0\AnimalApp.pdb
 C:\Users\Mateusz\Desktop\studia\6sem\apbd\3\AnimalApp\obj\Debug\net8.0\AnimalApp.genruntimeconfig.cache
 C:\Users\Mateusz\Desktop\studia\6sem\apbd\3\AnimalApp\obj\Debug\net8.0\ref\AnimalApp.dll
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.csproj.AssemblyReference.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.AssemblyInfoInputs.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.AssemblyInfo.cs
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.csproj.CoreCompileInputs.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.sourcelink.json
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.dll
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\refint\AnimalApp.dll
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\4\WarehouseApp\obj\Debug\net8.0\AnimalApp.pdb
