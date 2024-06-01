@@ -14,7 +14,7 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddDbContext<YourDbContext>(options =>
+        services.AddDbContext<Models.DBFirst>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
         services.AddControllers();

@@ -9,9 +9,9 @@ namespace DBFirst.Controllers
     public class TripsController : ControllerBase
     {   
         //TODO
-        private readonly YourDbContext _context;
+        private readonly Models.DBFirst _context;
 
-        public TripsController(YourDbContext _context)
+        public TripsController(Models.DBFirst _context)
         {
             _context = _context;
         }

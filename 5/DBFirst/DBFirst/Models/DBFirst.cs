@@ -2,9 +2,9 @@
 
 namespace DBFirst.Models
 {
-    public class YourDbContext : DbContext
+    public class DBFirst : DbContext
     {
-        public YourDbContext(DbContextOptions<YourDbContext> options) : base(options) { }
+        public DBFirst(DbContextOptions<DBFirst> options) : base(options) { }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<ClientTrip> ClientTrips { get; set; }

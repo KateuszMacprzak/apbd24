@@ -9,9 +9,9 @@ namespace DBFirst.Controllers
     [ApiController]
     public class ClientsController : ControllerBase
     {
-        private readonly YourDbContext _context;
+        private readonly Models.DBFirst _context;
 
-        public ClientsController(YourDbContext context)
+        public ClientsController(Models.DBFirst context)
         {
             _context = context;
         }
