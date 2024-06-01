@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EFCodeFirst.Models;
-using System.Threading.Tasks;
-using System.Linq;
+
 
 namespace EFCodeFirst.Controllers
 {
