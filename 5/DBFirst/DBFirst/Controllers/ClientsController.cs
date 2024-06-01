@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using DBFirst.Models;
 using System.Threading.Tasks;
 using System.Linq;
 
 
-namespace DBFirst.Controllers;
+namespace DBFirst.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

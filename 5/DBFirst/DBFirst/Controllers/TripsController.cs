@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TripApi.Models;
+using DBFirst.Models;
 using System.Threading.Tasks;
 using System.Linq;
 
 
-namespace DBFirst.Controllers;
+namespace DBFirst.Controllers
 {
     [Route("api/[controller]")]
     public class TripsController : ControllerBase
