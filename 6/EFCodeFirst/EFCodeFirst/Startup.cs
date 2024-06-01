@@ -1,10 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using EFCodeFirst.Models;
 using Microsoft.EntityFrameworkCore;
-using EFCodeFirst.Models;
 
 public class Startup
 {

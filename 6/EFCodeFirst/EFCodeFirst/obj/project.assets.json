@@ -1375,6 +1375,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
+      "Microsoft.EntityFrameworkCore >= 9.0.0-preview.4.24267.1",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 9.0.0-preview.4.24267.1",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -1419,6 +1420,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.0-preview.4.24267.1, )"
           },
           "Microsoft.EntityFrameworkCore.Sqlite.Core": {
             "target": "Package",
