@@ -46,9 +46,9 @@
               "target": "Package",
               "version": "[9.0.0-preview.4.24267.1, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+            "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[9.0.0-preview.4.24267.1, )"
+              "version": "[9.0.0-preview.4.24266.19, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

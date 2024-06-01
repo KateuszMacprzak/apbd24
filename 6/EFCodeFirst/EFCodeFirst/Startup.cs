@@ -1,6 +1,7 @@
-﻿using EFCodeFirst.Models;
-using Microsoft.EntityFrameworkCore;
+﻿
+using EFCodeFirst.Models;
 
+namespace EFCodeFirst;
 public class Startup
 {
     public Startup(IConfiguration configuration)
