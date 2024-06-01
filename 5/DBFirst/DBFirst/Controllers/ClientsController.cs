@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
 using DBFirst.Models;
-using System.Threading.Tasks;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace DBFirst.Controllers
@@ -23,7 +20,7 @@ namespace DBFirst.Controllers
         [HttpDelete("{idClient}")]
         public async Task<IActionResult> DeleteClient(int idClient)
         {
-            var client = await _context.Clients.Include(c => c.clientTrips)
+            var client = await _context.Clients.Include(c => c.ClientTrips)
                 .FirstOrDefaultAsync(c => c.ClientId == idClient);
             if (client == null)
             {

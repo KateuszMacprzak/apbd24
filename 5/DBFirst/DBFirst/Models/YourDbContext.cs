@@ -1,4 +1,4 @@
-﻿using Microsoft.EntiyFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace DBFirst.Models
 {
@@ -16,7 +16,7 @@ namespace DBFirst.Models
             modelBuilder.Entity<ClientTrip>().HasOne(ct => ct.Client).WithMany(c => c.ClientTrips)
                 .HasForeignKey(ct => ct.ClientId);
 
-            modelBuilder.Entity<ClientTrip>().HasOne(ct => ct.Trip).withMany(t => t.ClientTrips)
+            modelBuilder.Entity<ClientTrip>().HasOne(ct => ct.Trip).WithMany(t => t.ClientTrips)
                 .HasForeignKey(ct => ct.TripId);
         }
     }
