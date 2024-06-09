@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93d119ec-31cc-4924-9155-1abece4a4ec5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/GakkoAppHorizontal.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/GakkoAppHorizontal.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/GakkoAppHorizontal.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/GakkoAppHorizontal.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/GakkoAppHorizontal.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/Debug/net8.0/GakkoAppHorizontal.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/GakkoAppHorizontal.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/GakkoAppHorizontal.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/GakkoAppHorizontal.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontal/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppHorizontalTests/obj/Debug/net8.0/GakkoAppHorizontalTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/GakkoAppVertical.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/GakkoAppVertical.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/GakkoAppVertical.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/GakkoAppVertical.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/GakkoAppVertical.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/Debug/net8.0/GakkoAppVertical.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/GakkoAppVertical.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/GakkoAppVertical.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/GakkoAppVertical.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wyklad5/GakkoApp/GakkoAppVertical/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2fyJeWK4lqGUoUTMoJrae01Dh8B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93d119ec-31cc-4924-9155-1abece4a4ec5" name="Changes" comment="" />
+      <created>1714767481477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714767481477</updated>
+      <workItem from="1714767482075" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
