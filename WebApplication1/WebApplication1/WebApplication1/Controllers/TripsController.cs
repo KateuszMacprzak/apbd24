@@ -15,7 +15,12 @@ namespace WebApplication1.Controllers
         {
             _context = context;
         }
-
+        /*
+        1.. Końcówkę odpowiadającą na żądania HTTP GET wysyłane na adres
+        /api/trips
+        2. Końcówka powinna zwrócić listę podróży w kolejności posortowanej
+        malejącą po dacie rozpoczęcia wycieczki.
+        */
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TripDTO>>> GetTrips()
         {

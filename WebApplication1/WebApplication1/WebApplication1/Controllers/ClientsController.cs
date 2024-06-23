@@ -16,7 +16,15 @@ namespace WebApplication1.Controllers
         {
             _context = context;
         }
-
+        /*
+        Przygotuj końcówkę pozwalającą na usunięcie danych klienta.
+        1. Końcówka przyjmująca dane wysłane na adres HTTP DELETE na
+        adres /api/clients/{idClient}
+        2. Końcówka powinna najpierw sprawdzić czy klient nie posiada
+        żadnych przypisanych wycieczek. Jeśli klient posiada co najmniej
+        jedną przypisaną wycieczkę – zwracamy błąd i usunięcie nie
+        dochodzi do skutku.
+         */
         [HttpDelete("{idClient}")]
         public async Task<IActionResult> DeleteClient(int idClient)
         {
@@ -35,7 +43,12 @@ namespace WebApplication1.Controllers
 
             return NoContent();
         }
+        /*
+        Przygotuj końcówkę pozwalającą na przypisanie klienta do wycieczki.
+        1. Końcówka powinna przyjmować żądania http POST wysłane na adres
+        /api/trips/{idTrip}/clients
 
+         */
         [HttpPost("{idTrip}/clients")]
         public async Task<IActionResult> AssignClientToTrip(int idTrip, [FromBody] AssignClientDTO dto)
         {
@@ -44,6 +57,10 @@ namespace WebApplication1.Controllers
                 return NotFound("Trip not found.");
 
             var client = await _context.Clients.FirstOrDefaultAsync(c => c.Pesel == dto.Pesel);
+            /*
+            Czy klient o danym numerze PESEL istnieje. Jeśli nie, dodajemy go do
+            bazy danych.
+             */
             if (client == null)
             {
                 client = new Client
@@ -57,11 +74,16 @@ namespace WebApplication1.Controllers
                 _context.Clients.Add(client);
                 await _context.SaveChangesAsync();
             }
-
+            /*
+             Czy klient nie jest już zapisaną na wspomnianą wycieczkę – w takim
+            wypadku zwracamy błąd.
+             */
             var existingClientTrip = await _context.ClientTrips.FindAsync(client.IdClient, idTrip);
             if (existingClientTrip != null)
                 return BadRequest("Client is already assigned to this trip.");
-
+            /*
+            Czy wycieczka istnieje – jeśli nie – zwracamy błąd.
+             */
             var clientTrip = new ClientTrip
             {
                 IdClient = client.IdClient,
