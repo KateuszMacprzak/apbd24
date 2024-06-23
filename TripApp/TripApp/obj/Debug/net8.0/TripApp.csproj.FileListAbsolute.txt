@@ -1,0 +1,8 @@
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.csproj.AssemblyReference.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.AssemblyInfoInputs.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.AssemblyInfo.cs
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.csproj.CoreCompileInputs.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mateusz\Desktop\studia\6sem\apbd\TripApp\TripApp\obj\Debug\net8.0\TripApp.sourcelink.json

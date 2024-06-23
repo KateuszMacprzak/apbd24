@@ -1,0 +1,16 @@
+Stworzyć baze w SQL Server Management Studio 20
+
+Paczki : 
+Microsoft.AspNetCore.OpenApi
+Swashbuckle.AspNetCore
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Sqlite
+Microsoft.EntityFrameworkCore.SqlServer
+
+Potem trzeba wejsc do folderu naszej aplikacji -> zrobic ls i tam gdzie będzie NazwaAplikacji.csproj 
+Powinno to być cd NazwaAplikacji i jak się zrobi ls to zostajemy tam w terminalu
+W terminalu uruchamiamy te komendy : 
+dotnet new tool-manifest
+dotnet tool install dotnet-ef --version 8.0.0
+dotnet ef dbcontext scaffold "Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=s25367; Integrated Security=True; TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Context  
